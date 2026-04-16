@@ -2,8 +2,7 @@
 
 A full-stack AI system that transforms complex government programs into **simple, conversational, and actionable guidance** using Retrieval-Augmented Generation (RAG).
 
-🔗 **Live Demo (Frontend Preview):**  
-(Add your deployed link here)
+🔗 **Live Demo (Frontend Preview):**  https://aruthrasathishkumar.github.io/usda-chatbot/
 
 > **Note:** This live demo is frontend-only (hosted on GitHub Pages).
 - The backend (FastAPI + RAG + PostgreSQL + Ollama) runs locally by design  
