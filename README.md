@@ -10,6 +10,10 @@ A full-stack AI system that transforms complex government programs into **simple
 
 💡 This is a deliberate product decision to ensure **privacy + zero external API dependency**.
 
+## 🏗️ System Architecture
+
+<img src="./usda system architecture.png" width="800"/>
+                  
 ## 🧠 What This Project Does
 
 USDA Rural Development offers **100+ programs**, but:
@@ -39,25 +43,6 @@ Example:
 - 🧭 Program browser - Explore all 73 programs by category  
 - 💾 Chat history persistence - Stored in PostgreSQL for analytics  
 
-## 🏗️ Architecture
-
-    Browser (React + Tailwind UI)
-            │
-            │  user query
-            ▼
-    FastAPI Backend (port 8000)
-            │
-            ├── PostgreSQL (programs + chat history)
-            │
-            └── RAG Pipeline
-                  │
-                  ├── Embed query (BAAI/bge-small)
-                  ├── FAISS similarity search (top K programs)
-                  ├── Relevance filtering (threshold check)
-                  └── Mistral 7B (via Ollama)
-                          │
-                          ▼
-                  Grounded AI response + citations
 
 ## 🛠️ Tech Stack
 
